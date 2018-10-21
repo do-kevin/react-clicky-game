@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <style>
+        .nav-item {
+            text-align: center;
+        }
+
+        .box {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .box::after {
+            content: "";
+            border-radius: 5px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .box:hover {
+            -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+        }
+
+        .box:hover::after {
+            opacity: 1;
+        }
+    </style>
+    <title>Wireframe</title>
+</head>
+
+<body>
+    <!-- Where div#root would be -->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="col-md-4">
+                <p class="nav-item">One of three columns</p>
+            </div>
+            <div class="col-md-4">
+                <p class="nav-item">One of three columns</p>
+            </div>
+            <div class="col-md-4">
+                <p class="nav-item">One of three columns</p>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1>Remember Those Pokemons!</h1>
+    </div>
+    <div class="box" style="background-image: url(https://cdn.tutsplus.com/net/uploads/2013/09/bootstrap-3-preview.jpg); background-size: cover; margin: auto;"></div>
+    <div class="box" style="background-image: url(https://cdn.tutsplus.com/net/uploads/2013/09/bootstrap-3-preview.jpg); background-size: cover; margin: auto;"></div>
+    <div class="box" style="background-image: url(https://cdn.tutsplus.com/net/uploads/2013/09/bootstrap-3-preview.jpg); background-size: cover; margin: auto;"></div>
+    <div class="box" style="background-image: url(https://cdn.tutsplus.com/net/uploads/2013/09/bootstrap-3-preview.jpg); background-size: cover; margin: auto;"></div>
+
+    <!-- div#root end -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
