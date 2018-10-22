@@ -6,12 +6,12 @@ const Box = function(props) {
     console.log(props);
   return (
     <img
-      className="box"
+      className="box animated zoomIn delay-1.5s"
       id={props.id}
       key={props.id}
       src={props.src}
       alt={props.alt}
-      // onClick={() => props.choosePokemon(props.id)}
+      onClick={props.clickPokemon}
     />
   );
 };

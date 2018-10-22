@@ -10,11 +10,9 @@ class Game extends Component {
     pokemon
   };
 
-  choosePokemon = id => {
-    console.log(id);
-    const pokemon = this.state.pokemon.filter(monster => monster.id !== id);
-    this.setState({ pokemon });
-  };
+  clickPokemon = () => {
+    console.log("hit");
+  }
 
   render() {
     return (
@@ -23,7 +21,7 @@ class Game extends Component {
         <Jumbotron />
         <main>
           <section className="container">
-          {this.state.pokemon.map(function(monster) {
+          {this.state.pokemon.map(monster => {
             console.log("=================");
             console.log(monster.id);
             console.log(monster.src);
@@ -34,7 +32,7 @@ class Game extends Component {
                 key={monster.id}
                 src={monster.src}
                 alt={monster.alt}
-                // choosePokemon={this.choosePokemon}
+                clickPokemon={this.clickPokemon}
               />
             );
           })}
