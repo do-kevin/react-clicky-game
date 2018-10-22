@@ -1,7 +1,7 @@
 {
   "main.css": "/react-clicky-game/static/css/main.7c0b0bcc.chunk.css",
-  "main.js": "/react-clicky-game/static/js/main.68760740.chunk.js",
-  "main.js.map": "/react-clicky-game/static/js/main.68760740.chunk.js.map",
+  "main.js": "/react-clicky-game/static/js/main.bf98f338.chunk.js",
+  "main.js.map": "/react-clicky-game/static/js/main.bf98f338.chunk.js.map",
   "static/js/1.6105a37c.chunk.js": "/react-clicky-game/static/js/1.6105a37c.chunk.js",
   "static/js/1.6105a37c.chunk.js.map": "/react-clicky-game/static/js/1.6105a37c.chunk.js.map",
   "runtime~main.js": "/react-clicky-game/static/js/runtime~main.55abe30a.js",
@@ -10,6 +10,6 @@
   "static/media/Jumbotron.css": "/react-clicky-game/static/media/just-waves.d250deea.png",
   "static/media/Game.css": "/react-clicky-game/static/media/snorlax-bg.4e83295a.jpg",
   "index.html": "/react-clicky-game/index.html",
-  "precache-manifest.decc6e8ce866e498fe14fe2ef4272be2.js": "/react-clicky-game/precache-manifest.decc6e8ce866e498fe14fe2ef4272be2.js",
+  "precache-manifest.00433379f198612fb00ac825cc05b512.js": "/react-clicky-game/precache-manifest.00433379f198612fb00ac825cc05b512.js",
   "service-worker.js": "/react-clicky-game/service-worker.js"
 }
