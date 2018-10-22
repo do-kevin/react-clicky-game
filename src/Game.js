@@ -1,14 +1,15 @@
-import React , { Component } from "react";
+import React, { Component } from "react";
+import Jumbotron from "./components/Jumbotron/";
 import Score from "./components/Score";
-import pokemons from "./pokemons.json"
+import pokemons from "./pokemons.json";
 
-class Game extends Component {
-    render() {
-        return (
-
-        );
-    };
-}
-
+const Game = function() {
+  return (
+    <div>
+      <Score />
+      <Jumbotron />
+    </div>
+  );
+};
 
 export default Game;

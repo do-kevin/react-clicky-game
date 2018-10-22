@@ -1,8 +1,8 @@
 import React from "react";
 
-const Score = props => {
-    console.log(props);
-    <p class="nav-item">SCORE: {props}</p>;
-}
+const Score = function(props) {
+  console.log(props);
+  return <p className="nav-item">SCORE: 10</p>;
+};
 
 export default Score;
