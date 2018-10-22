@@ -1,6 +1,6 @@
 import React from "react";
 import "./Jumbotron.css";
-// 
+ 
 const Jumbotron = function() {
   return (
     <div className="jumbotron">

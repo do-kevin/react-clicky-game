@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "alt": "Pikachu",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+    },
+    {
+        "id": 2,
+        "alt": "Eevee",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png"
+    },
+    {
+        "id": 3,
+        "alt": "Mewtwo",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png"
+    },
+    {
+        "id": 4,
+        "alt": "Snorlax",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png"
+    },
+    {
+        "id": 5,
+        "alt": "Bulbasaur",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+    },
+    {
+        "id": 6,
+        "alt": "Mew",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png"
+    },
+    {
+        "id": 7,
+        "alt": "Psyduck",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png"
+    },
+    {
+        "id": 8,
+        "alt": "Gengar",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png"
+    },
+    {
+        "id": 9,
+        "alt": "Dragonite",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png"
+    },
+    {
+        "id": 10,
+        "alt": "Charmander",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+    },
+    {
+        "id": 11,
+        "alt": "Magikarp",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png"
+    },
+    {
+        "id": 12,
+        "alt": "Squirtle",
+        "src": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+    }
+]
