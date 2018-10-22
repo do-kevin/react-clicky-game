@@ -1,14 +1,15 @@
 {
-  "main.css": "/react-clicky-game/static/css/main.55e7372b.chunk.css",
-  "main.js": "/react-clicky-game/static/js/main.40335344.chunk.js",
-  "main.js.map": "/react-clicky-game/static/js/main.40335344.chunk.js.map",
-  "static/js/1.b99f27b3.chunk.js": "/react-clicky-game/static/js/1.b99f27b3.chunk.js",
-  "static/js/1.b99f27b3.chunk.js.map": "/react-clicky-game/static/js/1.b99f27b3.chunk.js.map",
+  "main.css": "/react-clicky-game/static/css/main.7c0b0bcc.chunk.css",
+  "main.js": "/react-clicky-game/static/js/main.68760740.chunk.js",
+  "main.js.map": "/react-clicky-game/static/js/main.68760740.chunk.js.map",
+  "static/js/1.6105a37c.chunk.js": "/react-clicky-game/static/js/1.6105a37c.chunk.js",
+  "static/js/1.6105a37c.chunk.js.map": "/react-clicky-game/static/js/1.6105a37c.chunk.js.map",
   "runtime~main.js": "/react-clicky-game/static/js/runtime~main.55abe30a.js",
   "runtime~main.js.map": "/react-clicky-game/static/js/runtime~main.55abe30a.js.map",
+  "static/css/main.7c0b0bcc.chunk.css.map": "/react-clicky-game/static/css/main.7c0b0bcc.chunk.css.map",
   "static/media/Jumbotron.css": "/react-clicky-game/static/media/just-waves.d250deea.png",
-  "static/css/main.55e7372b.chunk.css.map": "/react-clicky-game/static/css/main.55e7372b.chunk.css.map",
+  "static/media/Game.css": "/react-clicky-game/static/media/snorlax-bg.4e83295a.jpg",
   "index.html": "/react-clicky-game/index.html",
-  "precache-manifest.d848285e13fe9088cab41adf8d74cbc4.js": "/react-clicky-game/precache-manifest.d848285e13fe9088cab41adf8d74cbc4.js",
+  "precache-manifest.decc6e8ce866e498fe14fe2ef4272be2.js": "/react-clicky-game/precache-manifest.decc6e8ce866e498fe14fe2ef4272be2.js",
   "service-worker.js": "/react-clicky-game/service-worker.js"
 }
