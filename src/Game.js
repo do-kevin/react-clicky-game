@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Howl } from "howler";
-import Navbar from "./components/Jumbotron";
-import Jumbotron from "./components/Navbar";
+import Navbar from "./components/Navbar";
+import Jumbotron from "./components/Jumbotron";
 import Box from "./components/Box";
 import pokemon from "./pokemon.json";
 import "./Game.css";
