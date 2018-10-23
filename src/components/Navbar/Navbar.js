@@ -11,7 +11,7 @@ const Navbar = function(props) {
           </p>
         </div>
         <div className="col-md-4">
-          <p className="nav-item">
+          <p className="nav-item" id="nav-underline">
             <span>{props.result}</span>
           </p>
         </div>

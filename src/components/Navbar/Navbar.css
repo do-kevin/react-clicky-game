@@ -1,9 +1,12 @@
 nav {
     background-color: dodgerblue !important;
+    border-bottom: 1px solid rgb(190, 190, 190) !important;
 }
 
 .nav-item {
     text-align: center;
     margin-top: 8%;
     height: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
