@@ -7,11 +7,31 @@ import "./Game.css"
 
 class Game extends Component {
   state = {
-    pokemon
+    pokemon,
+    position: [],
+    continueOrGameOver: "",
+    wins: 0,
+    count: 0
   };
 
-  clickPokemon = () => {
+  shufflePokemon = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    // console.log('bam')
+    // console.log(array);
+    return array;
+  }
+
+  clickPokemon = (event) => {
+    console.log(event.target.id);
     console.log("hit");
+    this.setState({ position: this.shufflePokemon(this.state.pokemon)})
+    console.log(this.state.pokemon);
+    console.log(this.state.position);
   }
 
   render() {
