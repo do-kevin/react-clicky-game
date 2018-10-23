@@ -10,8 +10,11 @@ class Game extends Component {
     pokemon,
     position: [],
     continueOrGameOver: "",
+    previousPokemon: "",
     wins: 0,
-    count: 0
+    score: 0,
+    count: 0,
+   
   };
 
   shufflePokemon = (array) => {
@@ -25,13 +28,41 @@ class Game extends Component {
     // console.log(array);
     return array;
   }
-
+  
   clickPokemon = (event) => {
-    console.log(event.target.id);
+
+    if (this.state.score === 0) {
+      this.setState({ previousPokemon: event.target.alt});
+    }
+
+    console.log(event.target.alt);
+    console.log(this.state.previousPokemon);
+    
+    if (event.target.alt !== this.state.previousPokemon) {
+      this.setState({ score: this.state.score + 1});
+    }
+
+    if (event.target.alt === this.state.previousPokemon) {
+      console.log("Pokemon matched")
+    }
+    
+    
+   
     console.log("hit");
+    // if (event.target.id === event.target.position + 1) {
+    //   console.log("i guess");
+    // }
+
     this.setState({ position: this.shufflePokemon(this.state.pokemon)})
-    console.log(this.state.pokemon);
-    console.log(this.state.position);
+
+    if (this.state.score === 12) {
+      // player wins
+      this.setState({ score: 0, wins: this.state.wins + 1 })
+      console.log(`Wins: ${this.state.wins}`);
+    }
+    console.log(this.state.score);
+    // console.log(this.state.pokemon);
+    // console.log(this.state.position);
   }
 
   render() {
@@ -42,16 +73,17 @@ class Game extends Component {
         <main>
           <section className="container">
           {this.state.pokemon.map(monster => {
-            console.log("=================");
-            console.log(monster.id);
-            console.log(monster.src);
-            console.log(monster.name);
+            // console.log("=================");
+            // console.log(monster.id);
+            // console.log(monster.src);
+            // console.log(monster.name);
             return (
               <Box
                 id={monster.id}
                 key={monster.id}
                 src={monster.src}
                 alt={monster.alt}
+                position={this.state.pokemon.indexOf(monster) + 1}
                 clickPokemon={this.clickPokemon}
               />
             );
