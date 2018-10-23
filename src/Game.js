@@ -57,8 +57,7 @@ class Game extends Component {
       }
     } else if (this.state.previousPokemon.includes(event.target.alt)) {
       this.setState({ score: 0, previousPokemon: [], result: "You lost. Try again" });
-      this.lose.stop();
-      this.lose.play();
+      this.lose.stop().play();
       console.log("You lost");
     }
 
