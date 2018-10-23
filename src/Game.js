@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Howl, Howler} from "howler";
+import { Howl } from "howler";
 import Navbar from "./components/Jumbotron";
 import Jumbotron from "./components/Navbar";
 import Box from "./components/Box";
@@ -18,15 +18,15 @@ class Game extends Component {
   };
 
   select = new Howl({
-    src: ["../assets/audio/select.wav"]
+    src: ["./assets/audio/select.wav"]
   });
 
   lose = new Howl({
-    src: ["../assets/audio/lose.wav"]
+    src: ["./assets/audio/lose.wav"]
   });
 
   win = new Howl({
-    src: ["../assets/audio/win.wav"]
+    src: ["./assets/audio/win.wav"]
   });
   
 
