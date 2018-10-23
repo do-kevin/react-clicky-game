@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Howl, Howler} from "howler";
 import Navbar from "./components/Jumbotron";
 import Jumbotron from "./components/Navbar";
 import Box from "./components/Box";
@@ -8,13 +9,26 @@ import "./Game.css";
 class Game extends Component {
   state = {
     pokemon,
-    position: [],
     continueOrGameOver: "",
     previousPokemon: [],
     wins: 0,
     score: 0,
-    count: 0
+    count: 0,
+    result: ""
   };
+
+  select = new Howl({
+    src: ["../assets/audio/select.wav"]
+  });
+
+  lose = new Howl({
+    src: ["../assets/audio/lose.wav"]
+  });
+
+  win = new Howl({
+    src: ["../assets/audio/win.wav"]
+  });
+  
 
   shufflePokemon = array => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -23,8 +37,6 @@ class Game extends Component {
       array[i] = array[j];
       array[j] = temp;
     }
-    // console.log('bam')
-    // console.log(array);
     return array;
   };
 
@@ -33,30 +45,38 @@ class Game extends Component {
       previousPokemon: this.state.previousPokemon.concat(event.target.alt)
     });
 
+    this.select.play();
+
     if (!(this.state.previousPokemon.includes(event.target.alt))) {
-      this.setState({ score: this.state.score + 1 });
-      if (this.state.score === 11) {
-        this.setState({ score: 0, wins: this.state.wins + 1 });
+      this.setState({ score: this.state.score + 1, result: "You guessed correctly" });
+      if (this.state.score === 11) { // Updates after score is 11
+        this.setState({ score: 0, wins: this.state.wins + 1, result: "You win!" });
         console.log(this.state.wins);
+        this.win.play();
         console.log("You won");
       }
     } else if (this.state.previousPokemon.includes(event.target.alt)) {
-      this.setState({ score: 0, previousPokemon: [] });
+      this.setState({ score: 0, previousPokemon: [], result: "You lost. Try again" });
+      this.lose.stop();
+      this.lose.play();
       console.log("You lost");
     }
-    console.log(event.target.alt)
-    console.log(this.state.previousPokemon);
 
     this.setState({ position: this.shufflePokemon(this.state.pokemon) });
+
+    console.log(event.target.alt)
+    console.log(this.state.previousPokemon);
     console.log(this.state.score);
-    // console.log(this.state.pokemon);
-    // console.log(this.state.position);
   };
 
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar 
+          score={this.state.score}
+          result={this.state.result}
+          wins={this.state.wins}
+        />
         <Jumbotron />
         <main>
           <section className="container">
@@ -71,7 +91,6 @@ class Game extends Component {
                   key={monster.id}
                   src={monster.src}
                   alt={monster.alt}
-                  position={this.state.pokemon.indexOf(monster) + 1}
                   clickPokemon={this.clickPokemon}
                 />
               );
