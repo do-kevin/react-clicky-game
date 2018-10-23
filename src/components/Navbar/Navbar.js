@@ -7,17 +7,17 @@ const Navbar = function(props) {
       <div className="container">
         <div className="col-md-4">
           <p className="nav-item">
-            SCORE: <span>5</span>
+            SCORE: <span>{props.score}</span>
           </p>
         </div>
         <div className="col-md-4">
           <p className="nav-item">
-            <span>You guessed correctly!</span>
+            <span>{props.result}</span>
           </p>
         </div>
         <div className="col-md-4">
           <p className="nav-item">
-            TOP SCORE: <span>10</span>
+            WINS: <span>{props.wins}</span>
           </p>
         </div>
       </div>
